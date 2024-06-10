@@ -71,14 +71,14 @@
 - LightAntiCheat 1.2.1
 - Matrix 6.8.0
 - Medusa AntiCheat 1.5.7
+- NCP 3.16.0-b1134
 - Negativity 1.13
 - NESS Reloaed 2.8.0-SNAPSHOT
-- NoCheatPlus 3.16.0-b1134
 - PhoenixAntiCheat 2.0.0-pre6
 - Spartan Phase 510
 - SpookyAC 1.0
 - ThotPatrol 1.5.1
-- UpdatedNoCheatPlus 3.17.1-b188
+- UpdatedNCP 3.17.1-b188
 - Verus b3775
 - Verus b4161
 - Vulcan 2.0.0 pre18
