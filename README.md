@@ -79,6 +79,7 @@
 - SpookyAC 1.0
 - ThotPatrol 1.5.1
 - UpdatedNCP 3.17.1-b188
+- Verus b2484
 - Verus b3775
 - Verus b4161
 - Vulcan 2.0.0 pre18
