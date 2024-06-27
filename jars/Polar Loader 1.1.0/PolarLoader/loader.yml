@@ -1,0 +1,26 @@
+#   _____      _
+# |  __ \    | |
+# | |__) |__ | | __ _ _ __
+# |  ___/ _ \| |/ _` | '__|
+# | |  | (_) | | (_| | |
+# |_|   \___/|_|\__,_|_|
+#
+# (c) 2023 www.polar.top
+# Polar Loader configuration
+
+# If you are looking for Polar Anticheat configuration,
+# check out 'Polar' directory.
+
+# Choose between STABLE and LATEST
+# STABLE version may lack some bugfixes or optimisation tweaks, however,
+# is deemed more stable and production-ready.
+# LATEST version, on the other hand, has the latest cheat prevention algorithms
+# and is more up to date.
+#
+# Consider checking the #changelog channel in our Discord server to decide
+# which version fits best for you.
+version: 'LATEST'
+
+# A unique identifier is a value of your external IP address and HWID concatenated together.
+# If you want the loader to forcibly use a certain external IP, enter it below.
+force-external-address: ~

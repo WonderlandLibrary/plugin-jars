@@ -1,0 +1,74 @@
+#   _____      _
+# |  __ \    | |
+# | |__) |__ | | __ _ _ __
+# |  ___/ _ \| |/ _` | '__|
+# | |  | (_) | | (_| | |
+# |_|   \___/|_|\__,_|_|
+# 
+# Polar AntiCheat messages configuration
+# Documentation: https://docs.polar.top/
+# Learn more at https://polar.top/
+# 
+# 
+# The text serializer to use for all text components.
+# NATIVE: The default legacy Minecraft text serializer.
+# MINIMESSAGE: The Kyori MiniMessage text serializer.
+serializer: NATIVE
+
+# Messages sent as a result of command usage
+command_messages:
+  # This text gets displayed once a user hovers on a 'failed_check_message' message.
+  no_permission: "&8&l┃ &3Vein&bAC &8┃ &cYou do not have permission to access this command"
+  no_permission_subcommand: "&8&l┃ &3Vein&bAC &8┃ &cYou do not have permission to access this subcommand"
+
+  help: "&8&l┃ &3Vein&bAC &8┃ &fCommand help\n&3Vein&bAC &8&l┃ &b/{label} reload &f- Reloads the config\n&3Vein&bAC &8&l┃ &b/{label} alerts &f- Toggles the alerts\n&3Vein&bAC &8&l┃ &b/{label} mitigation &f- Toggle mitigation alerts\n&3Vein&bAC &8&l┃ &b/{label} version &f- View version info\n&3Vein&bAC &8&l┃ &b/{label} monitor &f- Performance analysis\n&3Vein&bAC &8&l┃ &b/{label} history &f- History of player's punishments\n&3Vein&bAC &8&l┃ &b/{label} info &f- Get user's info"
+
+  unknown_arg: "&8&l┃ &3Vein&bAC &8┃ &cUnknown subcommand, use /{label} for help"
+
+  reloaded: "&8&l┃ &3Vein&bAC &8┃ &aAntiCheat successfully reloaded"
+
+  alerts_disabled: "&8&l┃ &3Vein&bAC &8┃ &fYou have &cdisabled &fanticheat alerts"
+  alerts_enabled: "&8&l┃ &3Vein&bAC &8┃ &fYou have &aenabled &fanticheat alerts"
+
+  info_usage: "&8&l┃ &3Vein&bAC &8┃ &cInvalid usage, try /{label} info <player>"
+
+  target_not_online: "&8&l┃ &3Vein&bAC &8┃ &cInvalid usage, this player is not online."
+
+  info_response: "&8&l┃ &3Vein&bAC &8┃ Information for {player}:\n{profile}"
+
+  mitigation_alerts_disabled: "&8&l┃ &3Vein&bAC &8┃ &fYou have &cdisabled &fanticheat mitigation alerts"
+  mitigation_alerts_enabled: "&8&l┃ &3Vein&bAC &8┃ &fYou have &aenabled &fanticheat mitigation alerts"
+
+
+# Messages sent as a result of detection/mitigation alerts
+detection_messages:
+  # This message is being sent to all players having the polar.alerts permission,
+  # once someone is being suspected of hacking.
+  # The {player} placeholder gets replaced with the offender's name.
+  # The {check} placeholder gets replaced with the check name
+  # The {type} placeholder gets replaced with a check category from 'check_types' config option.
+  failed_check_message: "&8&l┃ &3Vein&bAC &8┃ &3{player} &8❘ &b{check} &8❘ &3x{vl}"
+
+  # The {player} placeholder gets replaced with the offender's name.
+  # The {description} placeholder gets replaced with the overall detections description.
+  cloud_check_message: "&8&l┃ &3Vein&bAC &8┃ &3{player} &b{description}"
+
+  # This message is being sent to all players which ran /polar mitigation with polar.command.mitigation permission
+  # when someone receives any type of mitigation (movement, combat, blocks).
+  mitigation_message: "&8&l┃ &3Vein&bAC &8┃ &3{player} &8❘ &7mitigated for &b{check} &8❘ &3x{vl}"
+
+  # This text gets displayed once a user hovers on a 'failed_check_message' message.
+  hover_details: "&7 Username: &b{username}\n&7 Version: &b{version}\n&7 Client: &b{client}\n&7 Ping: &b{ping}\n&7 Game mode: &b{game-mode}\n&7 Flying: &b{flying}\n&7 Position: &b{position}\n&7 Ticks existed: &b{ticks-existed}\n&7 BGP: &b{bungee-packets}\n&7 Debug info: &b{debug}\n\nClick to teleport"
+
+  # This text gets displayed once an administrator runs /polar info <player>.
+  info_details: "&7 Username: &b{username}\n&7 Version: &b{version}\n&7 Client: &b{client}\n&7 Ping: &b{ping}\n&7 Combat mitigation: &b{combat-mitigation}\n&7 Game mode: &b{game-mode}\n&7 Flying: &b{flying}\n&7 Position: &b{position}\n&7 Ticks existed: &b{ticks-existed}\n&7 BGP: &b{bungee-packets}"
+
+
+# Messages sent as a result of an error occurring within Polar
+error_messages:
+  # This message is sent to players if an exception occurred during their playing session.
+  exception_kick_message: "&cAn exception occurred in your connection\n§cPlease report this to server staff."
+  # This message is sent to players if they joined the server before Polar was loaded.
+  not_loaded_kick_message: "&cYour data has not been loaded by VeinAC"
+
+

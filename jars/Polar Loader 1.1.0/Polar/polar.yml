@@ -1,0 +1,239 @@
+#   _____      _
+# |  __ \    | |
+# | |__) |__ | | __ _ _ __
+# |  ___/ _ \| |/ _` | '__|
+# | |  | (_) | | (_| | |
+# |_|   \___/|_|\__,_|_|
+# 
+# Polar AntiCheat configuration
+# Documentation: https://docs.polar.top/
+# Learn more at https://polar.top/
+# 
+# 
+# A security measure that enhances the latency experienced by players during high network latency
+# to deter cheating and misuse.
+enforce_latency: true
+
+# A security measure allowing Polar to kick players if their latency is above this limit for a long period of time.
+unstable_connection_limit: 1750
+
+# A security measure to limit and block cheaters exploiting latency to extend their attack range
+# by artificially keeping their target closer through connection pauses or delays
+# to gain a combat advantage.
+# It is recommended to have this feature enabled by default.
+# However, if your server has a low number of advanced cheaters or is not heavily focused on PvP
+# or farming game modes, it is advised to disable it.
+# Blatant cheaters, for example, will not bother spending time farming equipment on factions servers.
+detect_and_prevent_backtrack: true
+
+# This functionality will enable Polar to append entities to other players with the objective
+# of deceiving combat cheats, such as Kill-aura.
+# This feature has the potential to detect and counteract these cheating methods.
+# However, this feature being experimental, there might be unexpected issues, and
+# it should be noted that there may be compatibility issues with certain plugins, such as TAB.
+attached_entities: false
+
+# The purpose of this function is to stop cheaters from gathering important information that could give them an unfair advantage.
+filters:
+  # The player health status will be hidden from every other player.
+  health: false
+
+  # The player additional-health (absorption) status will be hidden from every other player.
+  absorption: false
+
+
+# In the absence of a known tolerance type, the Moderate tolerance level will be applied by default
+# Severe: Zero tolerance, may cause false positives
+# Moderate: Similar to severe but provide a tiny margin of error
+# Balanced: Rare false positive, may create small movement bypasses
+# Permissive: Significantly reduce false positive, may create movement bypasses
+# Lenient: The risk of false positives is greatly reduced, but it may result in significant movement bypasses
+movement_tolerance: "Moderate"
+
+# In the absence of a known tolerance type, the Moderate tolerance level will be applied by default
+# Available options are Severe, Moderate, Balanced, Permissive, Lenient and Disabled
+blink_prevention_tolerance: "Moderate"
+
+# This option toggles performance shortcut for the movement simulation algorithms.
+# In exchange, this may create rare false flags with collisions and other edge case.
+# Prior to reporting a bug, ensure that the option is set to 'None'.
+# If an issue is observed to be caused by any of the performance modes, do not hesitate to notify us, and we will examine the possibility of a resolution.
+# It is important to note that this feature is experimental.
+# None: Polar will refrain from utilizing any potential shortcuts that could potentially result in subtle issues within movement simulations.
+# Careful: Polar will only utilize shortcuts which are almost always safe in every scenario
+# Performant: Polar will utilize shortcuts to the fullest extent possible, while simultaneously trying to minimize any potential butterfly effects that may arise within movement simulations
+simulation_performance_mode: "None"
+
+# This feature allow Polar to store blocks near a player for longer than a single tick-loop, 
+# decreasing the cost of block cache and collision, however this feature is still experimental.
+world_cache: false
+
+# Prevent players from entering full blocks with cheats such as phase.
+# This feature is still experimental.
+prevent_phase: true
+
+# Polar will monitor timings for it's own components, slightly use CPU, this option does not support reload.
+polar_profiler: true
+
+# This feature serves to mitigate instances of cheating and exploiting in-game mechanics.
+# By enabling this option, players will be prevented from utilizing bugs or glitches that result in
+# decreased slowdown caused by factors such as food consumption or sword blocking.
+# Polar achieves this by cancelling any interactions that do not conform to the intended mechanics of the game.
+# For example, if a player is observed not properly slowing down while blocking with their sword,
+# the server will register this as the player not blocking at all.
+prevent_no_slowdown: false
+
+# This option toggles experimental non-traditional cheat detection algorithms
+# We suggest you keep this option enabled, but if you notice many false positives
+# occurring, you may turn it off.
+# This is currently not used by Polar.
+experimental_detections: true
+
+# This option will automatically enable alerts to players having the polar.alerts permission every time
+# they join the server. They can manually disable them using /polar alerts.
+enable_alerts_automatically: true
+
+# This option will automatically enable mitigations notifications to players having the polar.mitigation permission every time
+# they join the server. They can manually disable them using /polar mitigation.
+enable_mitigations_automatically: false
+
+# Players with the polar.bypass Permission will be exempt from undergoing check alerts and security measures.
+exempt_permission: true
+
+# This command gets issued once a user clicks on a 'failed_check_message' message.
+# The {player} placeholder gets replaced with the offender's name.
+click_command: "/tp {player}"
+
+# These commands are run whenever Polar is certain that a player is hacking.
+# This does not apply to mitigable checks (i.e. those, where setbacks are possible)
+ban_commands:
+  - "kickhack {player} Cheating"
+
+# The cool-down, in seconds, between commands execution for a unique player,
+# the cool-down only resets for the concerned player.
+ban_cool_down: 5
+
+# These commands are run whenever Polar has reasonable suspicion that a player is hacking.
+# Kicks are mostly used in experimental and newly added checks.
+kick_commands:
+  - "kickhack {player} Cheating"
+
+# The cool-down, in seconds, between commands execution for a unique player,
+# the cool-down only resets for the concerned player.
+kick_cool_down: 5
+
+# When Polar is unable to connect to the cloud, unsent packets are queued up
+# in the file system. If the total size of queued packets reaches the defined threshold,
+# Polar cloud communication will be disabled until the server is restarted.
+max_queue_size_mb: 2000
+
+# This field allows you to change the name of the command Polar uses.
+command: "veinac"
+
+# How many clicks per second you want to allow for players before Polar takes mitigation actions.
+# It is recommended to keep this below 30 to prevent abuse.
+cps_limit: 20.0
+
+# How many right clicks per second you want to allow for players before Polar takes mitigation actions.
+# It is recommended to keep this below 30 to prevent abuse.
+right_cps_limit: 20.0
+
+# Setting this to `false` will make Polar not apply any combat mitigation for auto clicker checks
+# (the click speed limit mitigation from above will remain).
+mitigate_auto_clickers: true
+
+# Setting this to `true` will disable ALL auto clicker checks
+# (the click speed limit from above will remain)
+# and their corresponding mitigations.
+allow_auto_clickers: false
+
+# Should Polar use detections which are based on real-time of the server,
+# these detections may have false positives problems on specific PvP clients.
+# It is recommended to keep this enabled unless you are told otherwise by an administrator.
+time_based_detections: true
+
+# Exempt players when using elytra from movement and interaction detections,
+# use this only if you experience an issue that is pending to be solved,
+# but please when disabling this, report the issue!
+exempt_elytra: false
+
+# Polar cloud servers require a strictly followed packet order.
+# If any packet is missed and this option is enabled, the server will be stopped.
+# Otherwise, false positives and false punishments will occur.
+# If packet order mismatch happens at any point, verify that it is not
+# related to your hosting and report it to Polar support.
+stop_on_packet_order_issue: false
+
+# Apache Kafka integration configuration
+kafka:
+  # Whether Kafka integration should be enabled
+  enabled: false
+
+  # The Kafka bootstrap servers
+  bootstrap_servers:
+    - "localhost:9092"
+
+  # Kafka listener group ID
+  listener_group: "polar_group"
+
+  # Kafka listener settings
+  in:
+    # Whether this transport direction should be enabled
+    enabled: true
+
+    # Topic names for detection alerts
+    detection_alert_topics:
+      - "detection_alerts"
+
+    # Topic names for mitigation alerts
+    mitigation_alert_topics:
+      - "mitigation_alerts"
+
+
+  # Kafka sender settings
+  out:
+    # Whether this transport direction should be enabled
+    enabled: true
+
+    # Topic names for detection alerts
+    detection_alert_topics:
+      - "detection_alerts"
+
+    # Topic names for mitigation alerts
+    mitigation_alert_topics:
+      - "mitigation_alerts"
+
+
+
+# Loki integration configuration
+loki:
+  # Whether Loki integration should be enabled
+  enabled: false
+
+  # Loki server URL
+  url: "https://your-server-here.com/loki/api/v1/push"
+
+  # Set to true if you require basic authentication for Loki
+  authentication: false
+
+  # Loki username
+  # Ignored if authentication is disabled
+  username: "username"
+
+  # Loki password
+  # Ignored if authentication is disabled
+  password: "password"
+
+
+# File logging configuration
+file_logging:
+  # Set to true if you would like to enable file logging.
+  enabled: true
+
+  # Number of days for old logs to be deleted
+  log_expiration: 3
+
+  # Interval, in seconds, at which logs are written
+  submission_interval: 10
+
+

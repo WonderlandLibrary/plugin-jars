@@ -11,6 +11,7 @@
 - AAC 4.3.12
 - AAC 4.4.2
 - AAC 5.0.14-b1
+- AAC Addons
 - AntiAura v2 0.3.1
 - AntiCheat 0.0.1
 - AntiCheat 0.0001
@@ -56,7 +57,10 @@
 - AntiHaxerman 3.0
 - BadAntiCheat
 - BasicAntiCheat 1.2.2
+- Buzz 1.0.0
+- CavaAntiCheat 1.1.0
 - CheatGuard 1.1.4
+- EpicGuard 5.3.0
 - Fiona v2.3.2-b1
 - Fiona v3.5.1
 - FoxAddition 1.1.9
@@ -75,16 +79,22 @@
 - Negativity 1.13
 - NESS Reloaed 2.8.0-SNAPSHOT
 - PhoenixAntiCheat 2.0.0-pre6
+- Polar Loader 1.1.0
 - Spartan Phase 510
 - SpookyAC 1.0
 - ThotPatrol 1.5.1
+- UltimateAntibot 4.0.9
 - UpdatedNCP 3.17.1-b188
+- Verus Addons
 - Verus b2484
+- Verus b3608
 - Verus b3775
 - Verus b4161
+- Verus-b2443
 - Vulcan 2.0.0 pre18
 - Vulcan 2.6.9
 - Vulcan 2.8.6
+- Vulcan Addons
 - Warden 1.2
 - Wraith 2.2.6
 
