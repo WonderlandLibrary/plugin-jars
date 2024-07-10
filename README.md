@@ -4,13 +4,26 @@
 ### JARs
 - AAC 1.9.10
 - AAC 2.1.1-b1
+- AAC 3.3.0
+- AAC 3.3.1
+- AAC 3.3.15
 - AAC 3.3.9
+- AAC 3.4.2
 - AAC 3.5.0
 - AAC 3.6.4
+- AAC 4.3.10
 - AAC 4.3.12
 - AAC 4.4.2
-- AAC 5.0.14-b1
-- AAC Addons
+- AAC 5.0.13
+- AAC 5.0.14
+- AAC 5.0.4
+- AAC 5.2.0
+- AAC 5.2.1
+- AAC Addition Pro 5.2.3
+- AAC Addition Pro 6.4.0
+- AAC BungeeConnect 1.6.8
+- AAC Hider 0.1
+- Alice 1.1.9.2
 - AntiAura v2 0.3.1
 - AntiCheat 0.0.1
 - AntiCheat 0.0001
@@ -63,39 +76,97 @@
 - Fiona v2.3.2-b1
 - Fiona v3.5.1
 - FoxAddition 1.1.9
+- GodsEye b24
+- GodsEye b49.6
+- GodsEye b53
+- GodsEye b62
 - GodsEye Build 53
 - GrimAC 2.3.40
 - GrimAC 2.3.64
+- Gwen v1.4
 - Hawk Beta-2008
 - Horizon 1.4.6-Hotfix#8
-- Intave 14.5.6
+- Karhu 1.0
+- Karhu 1.9-69
+- Karhu 1.9.30
 - Kauri 2.19.2
 - KizukiAntiCheat 2.2.0
 - LightAntiCheat 1.2.1
 - Matrix 6.8.0
 - Medusa AntiCheat 1.5.7
-- NCP 3.16.0-b1134
+- NCP 3.16.0
 - Negativity 1.13
-- NESS Reloaed 2.8.0-SNAPSHOT
-- PhoenixAntiCheat 2.0.0-pre6
+- NESS Reloaed 2.8.0
+- PhoenixAntiCheat 2.0.0
+- Spartam 528
+- Spartan 397
+- Spartan 424
+- Spartan 431
+- Spartan 433
+- Spartan 437
+- Spartan 438
+- Spartan 440
+- Spartan 442
+- Spartan 443
+- Spartan 467
+- Spartan 475
+- Spartan 478
+- Spartan 488
+- Spartan 502
+- Spartan 515
+- Spartan 522
+- Spartan 529
 - Spartan Phase 510
+- Spartan_437.jar
+- Spidey AntiCheat v1
+- Spidey AntiCheat v2
 - SpookyAC 1.0
 - ThotPatrol 1.5.1
 - UltimateAntibot 4.0.9
-- UpdatedNCP 3.17.1-b188
-- Verus Addons
+- UpdatedNCP 3.17.1
+- Verus API 1.2.1
+- Verus API 1.3
+- Verus b2443
 - Verus b2484
 - Verus b3608
 - Verus b3775
 - Verus b4161
-- Verus-b2443
-- Vulcan 2.0.0 pre18
+- Verus BungeeLink 2.0
+- Verus BungeeLink 2.1.13
+- Verus unknown versions
+- Vulcan 2.0.0
+- Vulcan 2.3.1
+- Vulcan 2.6.5
+- Vulcan 2.6.6
+- Vulcan 2.6.7
 - Vulcan 2.6.9
+- Vulcan 2.7.0
+- Vulcan 2.7.2
+- Vulcan 2.7.5
+- Vulcan 2.7.7
+- Vulcan 2.7.9
+- Vulcan 2.8.2
+- Vulcan 2.8.3
+- Vulcan 2.8.5
 - Vulcan 2.8.6
-- Vulcan Addons
+- Vulcan API
+- Vulcan Crackshot 1.16
+- Vulcan McMMOLegacy 1.16
+- Vulcan Velocity 2.0.5
 - Warden 1.2
+- WatchCat
 - Watcher
+- Wave 0.2.0
+- WitherAC 0.24.0
+- Wolf 0.1C
+- Wraith 2.2.3
 - Wraith 2.2.6
+- Wraith 2.2.9
+- Wraith 2.3.4
+- Wraith 2.3.5c
+- XinAC 1
+- xLoreyGuard 0.6.1
+- Zenix BETA 0.8
 
 ### Contributing
 - Put your name (preferably your github username) in the ``contributors.list`` file if you haven't already done so in a previous commit.
