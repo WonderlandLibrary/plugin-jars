@@ -72,6 +72,7 @@
 - Buzz 1.0.0
 - CavaAntiCheat 1.1.0
 - CheatGuard 1.1.4
+- Ectasy
 - EpicGuard 5.3.0
 - Fiona v2.3.2-b1
 - Fiona v3.5.1
@@ -117,7 +118,6 @@
 - Spartan 522
 - Spartan 529
 - Spartan Phase 510
-- Spartan_437.jar
 - Spidey AntiCheat v1
 - Spidey AntiCheat v2
 - SpookyAC 1.0
