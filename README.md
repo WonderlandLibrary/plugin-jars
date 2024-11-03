@@ -84,6 +84,7 @@
 - GodsEye Build 53
 - GrimAC 2.3.40
 - GrimAC 2.3.64
+- GrimAC 3.0.94
 - Gwen v1.4
 - Hawk Beta-2008
 - Horizon 1.4.6-Hotfix#8
